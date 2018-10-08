@@ -1,0 +1,10 @@
+<ActionBar title="Evince Demo"></ActionBar>
+<ListView class="list-group" [items]="userList" (itemTap)="onItemTap($event)" style="height:1250px">
+	<ng-template let-user="item">
+		<FlexboxLayout flexDirection="column" class="list-group-item">
+			<Label [text]="user[1]"></Label>
+			<Label [text]="user[2]"></Label>
+			<Label [text]="user[3]"></Label>
+		</FlexboxLayout>
+	</ng-template>
+</ListView>
